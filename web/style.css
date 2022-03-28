@@ -1,0 +1,35 @@
+body {
+    display: grid;
+    place-items: center;
+    gap: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#clicker-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+.clicker-label {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: coral;
+}
+
+.clicker-element:disabled + .clicker-label {
+    background-color: lightgray;
+}
+
+.clicker-element:checked + .clicker-label {
+    background-color: green;
+}
+.clicker-element {
+    display: none;
+}
